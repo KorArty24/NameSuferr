@@ -40,8 +40,6 @@ public class NameSurferGraph extends GCanvas
 		DisplayedEntries.add(entry);
 	}
 	
-	
-	
 	/**
 	* Updates the display image by deleting all the graphical objects
 	* from the canvas and then reassembling the display according to
@@ -58,8 +56,8 @@ public class NameSurferGraph extends GCanvas
 		}
 	private void buildMesh(){
 		double x=0;
-			for (int i=0;i<=(NDECADES+1);i++) {
-			x=getWidth()/(NDECADES+1)*i;
+			for (int i=0;i<=(NDECADES);i++) {
+			x=getWidth()/(NDECADES)*i;
 			GLine v_separator = new GLine(x,0,x,getHeight());
 			add(v_separator);
 			}
@@ -79,9 +77,7 @@ public class NameSurferGraph extends GCanvas
 		
 	}
 	private void buildGraph() {
-	
-		
-		if (DisplayedEntries.size()>=0) {
+  		if (DisplayedEntries.size()>=0) {
 			for (int i=0;i<DisplayedEntries.size(); i++) {
 				NameSurferEntry entries=DisplayedEntries.get(i);
 				int k=i;
