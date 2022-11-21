@@ -45,9 +45,7 @@ public class NameSurfer extends Program implements NameSurferConstants {
 		if (cmd.equals("Graph")){
 			String entered_name=textField.getText();
 			NameSurferEntry rankings=baby_names.findEntry(entered_name);
-	
-	
-			if (rankings!=null) {
+				if (rankings!=null) {
 				graph.addEntry(rankings);
 				graph.update();
 			}
