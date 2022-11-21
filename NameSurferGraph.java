@@ -21,6 +21,7 @@ public class NameSurferGraph extends GCanvas
 	public NameSurferGraph() {
 		addComponentListener(this);
 		DisplayedEntries= new ArrayList<NameSurferEntry>();
+		
 	}
 	
 	/**
