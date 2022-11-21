@@ -21,8 +21,6 @@ public class NameSurferGraph extends GCanvas
 	public NameSurferGraph() {
 		addComponentListener(this);
 		DisplayedEntries= new ArrayList<NameSurferEntry>();
-		
-		//	 You fill in the rest //
 	}
 	
 	/**
@@ -30,8 +28,6 @@ public class NameSurferGraph extends GCanvas
 	*/
 	public void clear() {
 	 DisplayedEntries.clear();
-	 
-		//	 You fill this in //
 	}
 	
 	/* Method: addEntry(entry) */
@@ -59,18 +55,14 @@ public class NameSurferGraph extends GCanvas
 		buildMesh();
 		addLabels();
 		buildGraph();
-		
-		
-	}
+		}
 	private void buildMesh(){
 		double x=0;
 			for (int i=0;i<=(NDECADES+1);i++) {
 			x=getWidth()/(NDECADES+1)*i;
 			GLine v_separator = new GLine(x,0,x,getHeight());
 			add(v_separator);
-			
 			}
-		 	
 		add(new GLine(0,BOTTOM_DIST,getWidth(),BOTTOM_DIST));
 		add(new GLine(0,getHeight()-BOTTOM_DIST,getWidth(), getHeight()-BOTTOM_DIST));
 	}
@@ -78,8 +70,7 @@ public class NameSurferGraph extends GCanvas
 	private void addLabels(){
 		int year_label$num=1890;
 		double x=0;
-		
-		for (int i=0;i<(1+NDECADES);i++) {
+			for (int i=0;i<(1+NDECADES);i++) {
 			year_label$num=START_DECADE+10*i;
 			String year_label=Integer.toString(year_label$num);
 			x=i*(getWidth()/(NDECADES+1));
