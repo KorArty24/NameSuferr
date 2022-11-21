@@ -74,8 +74,7 @@ public class NameSurferGraph extends GCanvas
 			x=i*(getWidth()/(NDECADES));
 			add(new GLabel(year_label,x,getHeight()-5));
 		}
-		
-	}
+		}
 	private void buildGraph() {
   		if (DisplayedEntries.size()>=0) {
 			for (int i=0;i<DisplayedEntries.size(); i++) {
@@ -89,11 +88,10 @@ public class NameSurferGraph extends GCanvas
 				
 	private void drawEntry(NameSurferEntry entry, int t) {
 		
-
 	double x0=-getWidth() / (NDECADES+1);
 	double x1=getWidth() / (NDECADES+1);
 	
-	for (int i=0; i<12;i++) {
+	for (int i=0; i<10;i++) {
 		
 		double height=getHeight();
 		double scale_y=getHeight()/MAX_RANK;
