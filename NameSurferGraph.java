@@ -68,10 +68,10 @@ public class NameSurferGraph extends GCanvas
 	private void addLabels(){
 		int year_label$num=1890;
 		double x=0;
-			for (int i=0;i<(1+NDECADES);i++) {
+			for (int i=0;i<(NDECADES);i++) {
 			year_label$num=START_DECADE+10*i;
 			String year_label=Integer.toString(year_label$num);
-			x=i*(getWidth()/(NDECADES+1));
+			x=i*(getWidth()/(NDECADES));
 			add(new GLabel(year_label,x,getHeight()-5));
 		}
 		
